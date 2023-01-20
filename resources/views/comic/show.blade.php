@@ -1,9 +1,8 @@
 @extends('layout.main')
 
 @section('page-content')
-    <div class="containter">
-        <div class="row">
-            <div class="card" style="width: 18rem;">
+    <div class="containter text-center">
+            <div class="card mx-auto" style="width: 18rem;">
                 <img class="card-img-top" src="{{ $comic->thumb }}" alt="{{$comic->title}}">
                 <div class="card-body">
                   <h5 class="card-title">{{$comic->title}}</h5>
@@ -15,7 +14,6 @@
                 </div>
               </div>
 
-        </div>
         <a href="{{ route('comics.index',)}} " class="btn btn-secondary">Torna alla Home</a>
     </div>
 @endsection
